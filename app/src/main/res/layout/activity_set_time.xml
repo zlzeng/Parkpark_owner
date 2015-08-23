@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark_owner.SetTimeActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可租時間設置"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:onClick="onBackClick" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="#ffffff">
+
+        <include android:id="@+id/card_settime" layout="@layout/include_parkinginfocard"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/map2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:scaleType="fitXY"
+            android:elevation="5dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@mipmap/background_settime"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/hour"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="15dp"
+            android:id="@+id/hour_calendar"
+            android:onClick="onSetTimeDetailClick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/day"
+            android:layout_gravity="center"
+            android:id="@+id/day_calendar"
+            android:onClick="onSetTimeDetailClick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/month"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="15dp"
+            android:onClick="onSetTimeDetailClick"
+            android:id="@+id/month_calendar" />
+    </FrameLayout>
+
+
+</FrameLayout>

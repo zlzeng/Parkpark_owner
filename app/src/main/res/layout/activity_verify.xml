@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark.VerifyCarActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="車位認證"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="351dp"
+        android:layout_height="222dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rect">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cam"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:onClick="onCameraClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上傳資料照片"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="50dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/photo"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/rect2"
+        android:layout_marginBottom="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="車位資料"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forward2"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="30dp" />
+    </FrameLayout>
+
+</FrameLayout>

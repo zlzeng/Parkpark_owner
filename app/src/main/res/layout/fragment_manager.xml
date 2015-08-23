@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark_owner.ManagerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可租時間"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/car"
+        android:layout_gravity="center"
+        android:id="@+id/nocarinfo" />
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onCardManagerClick"
+        android:layout_marginTop="75dp">
+
+        <include android:id="@+id/card_manager" layout="@layout/include_parkinginfocard"/>
+
+    </FrameLayout>
+
+</FrameLayout>

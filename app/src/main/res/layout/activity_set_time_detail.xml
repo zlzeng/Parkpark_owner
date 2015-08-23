@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark_owner.SetTimeDetailActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設置月租時間"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:id="@+id/set_detail_time_title" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:onClick="onBackClick" />
+
+    </FrameLayout>
+
+    <include
+        android:layout_width="350dp"
+        android:layout_height="135dp"
+        layout="@layout/include_parkinginfocard"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/card_settime_detail" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h_calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_settime_detail"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/d_calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/card_settime_detail"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/day_calendar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:id="@+id/m_calendar"
+        android:layout_below="@+id/card_settime_detail"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/prev"
+            android:src="@mipmap/prev"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="onChangeYearsClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015"
+            android:id="@+id/years"
+            android:textSize="35dp"
+            android:textColor="#70b8e2"
+            android:layout_toRightOf="@+id/prev"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:src="@mipmap/next"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/years"
+            android:layout_marginLeft="80dp"
+            android:onClick="onChangeYearsClick" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/m1"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/m2"
+                android:layout_gravity="center"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/m3"
+                android:layout_gravity="right|center_vertical"
+                android:textColor="#c9c9c9"
+                android:textIsSelectable="false"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m2"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/m4"
+                android:textSize="45dp"
+                android:textColor="#c9c9c9"
+                android:layout_toRightOf="@+id/m3"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/m5"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m4"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/m6"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m5"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:id="@+id/m7"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/m8"
+                android:layout_gravity="center"
+                android:textColor="#c9c9c9"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m7"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/m9"
+                android:layout_gravity="right|center_vertical"
+                android:textColor="#c9c9c9"
+                android:textIsSelectable="false"
+                android:textSize="45dp"
+                android:layout_toRightOf="@+id/m8"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:text="10"
+                android:id="@+id/m10"
+                android:textSize="42dp"
+                android:textColor="#c9c9c9"
+                android:layout_toRightOf="@+id/m9"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:text="11"
+                android:id="@+id/m11"
+                android:textColor="#c9c9c9"
+                android:textSize="42dp"
+                android:layout_toRightOf="@+id/m10"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="60dp"
+                android:text="12"
+                android:id="@+id/m12"
+                android:textColor="#c9c9c9"
+                android:textSize="42dp"
+                android:layout_toRightOf="@+id/m11"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:onClick="onChangeColorClick" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="确定"
+        android:id="@+id/textView"
+        android:layout_below="@+id/m_calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#70b8e2"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:onClick="onClick"
+        android:elevation="5dp" />
+
+</RelativeLayout>

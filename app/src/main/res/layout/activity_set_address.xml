@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zz.parkpark_owner.SetAddressActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#70b8e2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="設置地址"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:onClick="onSaveClick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:onClick="onBackClick" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/address"
+            android:id="@+id/img_set_addr"
+            android:layout_marginLeft="5dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@mipmap/map"
+            android:layout_alignTop="@+id/img_set_addr"
+            android:layout_marginTop="100dp" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:id="@+id/editAddress"
+            android:layout_alignParentStart="false"
+            android:layout_marginStart="52dp"
+            android:layout_alignBottom="@+id/img_set_addr"
+            android:background="@null"
+            android:inputType="text" />
+    </RelativeLayout>
+
+</FrameLayout>

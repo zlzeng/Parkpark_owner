@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="135dp"
+    android:layout_gravity="center_horizontal"
+    android:visibility="invisible"
+    android:background="#ffffff"
+    android:elevation="2dp"
+    android:alpha="80">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/testImg"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="創建車位"
+        android:id="@+id/testTxt"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="52dp"
+        android:layout_toRightOf="@+id/testImg"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/forward_arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"
+        android:id="@+id/arrow" />
+
+</RelativeLayout>
+
+<!-- RelativeLayout android:id="@+id/card" -->
